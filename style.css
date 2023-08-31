@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(https://wallpaperbrokers.com.au/cdn/shop/products/shutterstock_406740199_web.jpg?v=1495779660);
+  background-size: cover;
+  background-position-y: -100px;
+  background-repeat: no-repeat;
+}
+
+.clock {
+  background: url(https://cdn.britannica.com/14/4814-004-7C0DF1BB/Flag-Ukraine.jpg);
+  width: 500px;
+  height: 500px;
+  border: 10px solid #e1e1e1;
+  border-radius: 50%;
+  margin: 200px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  box-shadow: 2px 2px 20px #4c4c4c;
+  animation: start 15s cubic-bezier(0.075, 0.82, 0.165, 1) alternate infinite;
+  transform: scale(0.3);
+  box-shadow: 2px 2px 20px #c5c5c5;
+}
+.clock__block-number {
+  color: #000000;
+  border: #ffffff;
+  position: absolute;
+  font-size: 54px;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
+.clock__block-number:nth-child(1) {
+  top: 8%;
+  left: 68%;
+}
+.clock__block-number:nth-child(2) {
+  top: 23%;
+  left: 84%;
+}
+.clock__block-number:nth-child(3) {
+  top: 44%;
+  left: 89%;
+}
+.clock__block-number:nth-child(4) {
+  top: 64%;
+  left: 84%;
+}
+.clock__block-number:nth-child(5) {
+  top: 79%;
+  left: 68%;
+}
+.clock__block-number:nth-child(6) {
+  bottom: 10px;
+  left: 48%;
+}
+.clock__block-number:nth-child(7) {
+  bottom: 8%;
+  left: 27%;
+}
+.clock__block-number:nth-child(8) {
+  bottom: 23%;
+  left: 12%;
+}
+.clock__block-number:nth-child(9) {
+  top: 44%;
+  right: 88%;
+}
+.clock__block-number:nth-child(10) {
+  top: 23%;
+  right: 80%;
+}
+.clock__block-number:nth-child(11) {
+  top: 8%;
+  right: 65%;
+}
+.clock__block-number:nth-child(12) {
+  top: 10px;
+  left: 45%;
+}
+.clock:hover .clock__seconds {
+  animation: step 2s steps(600, end) infinite;
+}
+.clock:hover .clock__minutes {
+  animation: step 3s steps(600, end) infinite;
+}
+.clock:hover .clock__hours {
+  animation: step 5s steps(1000, end) infinite;
+}
+.clock:hover {
+  background: url(https://pngicon.ru/file/uploads/1_1735.png);
+  background-size: contain;
+  border: 0;
+  box-shadow: none;
+}
+.clock:hover .clock__block-number {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+}
+.clock__seconds {
+  position: absolute;
+  width: 5px;
+  height: 175px;
+  background-color: rgb(255, 0, 0);
+  bottom: 50%;
+  animation: step 60s steps(60, end) infinite;
+  transform-origin: bottom;
+  border-radius: 30px 30px 0px 0px;
+}
+.clock__minutes {
+  position: absolute;
+  width: 5px;
+  height: 125px;
+  background-color: black;
+  bottom: 50%;
+  animation: step 3600s steps(3600, end) infinite;
+  transform-origin: bottom;
+  border-radius: 30px 30px 0px 0px;
+}
+.clock__hours {
+  position: absolute;
+  width: 5px;
+  height: 100px;
+  background-color: black;
+  bottom: 50%;
+  animation: step 86400s steps(86400, end) infinite;
+  transform-origin: bottom;
+  border-radius: 30px 30px 0px 0px;
+}
+.clock__center {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: rgb(255, 251, 0);
+  z-index: 4;
+}
+
+@keyframes step {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes start {
+  0% {
+    transform: scale(0.5) translateY(-75px);
+  }
+  10% {
+    transform: scale(0.5) translateY(150px);
+  }
+  20% {
+    transform: scale(0.5) translateY(-73px);
+  }
+  30% {
+    transform: scale(0.5) translateY(100px);
+  }
+  40% {
+    transform: scale(0.5) translateY(-125px);
+  }
+  50% {
+    transform: scale(0.5) translateY(200px);
+  }
+  60% {
+    transform: scale(0.5) translateY(-300px);
+  }
+  70% {
+    transform: scale(0.5) translateY(400px);
+  }
+  80% {
+    transform: scale(0.5) translateY(-75px);
+  }
+  90% {
+    transform: scale(0.5) translateY(125px);
+  }
+  100% {
+    transform: scale(0.5) translateY(-100px);
+  }
+}
+img {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
